@@ -3,51 +3,64 @@ package com.qcsummit.thinkabit.qcsummit;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-/**
- * Created by spillai1 on 7/8/15.
- */
-public class Firstpage extends Activity {
 
-    private Button  btnGame, btnSocial;
+public class Firstpage extends AppCompatActivity {
+
+    private Button  btnSocial;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.first_page);
-
-
-        btnGame = (Button) findViewById(R.id.btngame);
-
         btnSocial = (Button) findViewById(R.id.btnsocial);
-
-
-
-//        button = (Button) findViewById(R.id.button);
-
-        btnGame.setOnClickListener(new View.OnClickListener() {
+        btnSocial.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                setContentView(R.layout.grandma);
-                Intent intent = new Intent(Firstpage.this, Game.class);
+                Intent intent = new Intent(Firstpage.this, Resource.class);
                 startActivity(intent);
 
             }
         });
 
-//        btnSocial.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent(Firstpage.this, Peers.class);
-//                startActivity(intent);
-////                setContentView(R.layout.peers);
-//
-//            }
-//        });
+
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_Social) {
+            Intent intent = new Intent(Firstpage.this, Resource.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.action_profile) {
+            Intent intent = new Intent(Firstpage.this, Firstpage.class);
+            startActivity(intent);
+            return true;
+        }
 
 
+
+        return super.onOptionsItemSelected(item);
     }
 
 }
