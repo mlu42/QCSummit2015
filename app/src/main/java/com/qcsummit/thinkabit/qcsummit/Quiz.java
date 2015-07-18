@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Button;
 
 /**
@@ -13,14 +14,22 @@ import android.widget.Button;
 public class Quiz extends AppCompatActivity {
 
 
-    private Button  someb;
+    Button next;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.quiz);
+        next = (Button) findViewById(R.id.button1);
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                setContentView(R.layout.grandma);
+                Intent intent = new Intent(Quiz.this, Quiz1.class);
+                startActivity(intent);
 
-
-
+            }
+        });
     }
 
         @Override
