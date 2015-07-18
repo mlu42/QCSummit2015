@@ -57,6 +57,16 @@ public class Firstpage extends AppCompatActivity {
             startActivity(intent);
             return true;
         }
+        if (id == R.id.action_Career) {
+            Intent intent = new Intent(Firstpage.this, Career.class);
+            startActivity(intent);
+            return true;
+        }
+        if (id == R.id.action_logout) {
+            Intent intent = new Intent(Firstpage.this, MainActivity.class);
+            startActivity(intent);
+            return true;
+        }
 
 
 

@@ -7,10 +7,13 @@
         android:orientation="vertical"
         android:background="@color/red">
         <LinearLayout
+
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="20px">
             <Button
+                android:id="@+id/btnlocal"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Local"/>
@@ -19,6 +22,7 @@
                 android:layout_height="wrap_content"
                 android:text="Following"/>
             <Button
+                android:id="@+id/btnResource"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Resources"/>
@@ -26,12 +30,35 @@
         </LinearLayout>
 
 
-        <TextView
+
+
+
+
+
+
+<!--resource-->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/resourceView"
+        android:orientation="vertical">
+
+        <LinearLayout
+
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Resources"
-            android:textSize="15pt"
-            android:layout_margin="20px"/>
+            android:background="@color/pink"
+            android:orientation="vertical"
+
+            android:layout_margin="20px">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Resources"
+                android:textSize="15pt"
+                android:layout_margin="20px"/>
+
 
         <ImageView
             android:layout_width="wrap_content"
@@ -42,41 +69,134 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Current Career Path: Senior Electrical Engineer"
+            android:text="ARDUINO CONTROLLED ETCH-A-SKETCH"
             android:layout_margin="10px"/>
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Career Expertise: Level 10"
+            android:text="Details: --*Note* --Each week we highlight a piece of hardware that can also be found here at our lab."
             android:layout_margin="10px"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Career Package number: 6"
-            android:layout_margin="10px"/>
-
 
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Projects number: 6"
+            android:text="ReadMore: https://www.thinkabitlab.com/project/lab-hardware-highlight-3d-printing"
             android:layout_margin="10px"/>
-        <TextView
+        </LinearLayout>
+
+        <LinearLayout
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Following: 19"
-            android:layout_margin="10px"/>
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Qualcomm index: 167"
-            android:layout_margin="10px"/>
+            android:background="@color/pink"
+            android:orientation="vertical"
+            android:layout_margin="20px">
 
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/project2"
+                android:layout_margin="20px"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="LAB HARDWARE HIGHLIGHT - 3D PRINTING!"
+                android:layout_margin="10px"/>
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Details: One day at the lab, our esteemed teacher and leader, Saura Naderi challenged our soon to be, additional teacher at the lab, Venessa to churn out a project."
+                android:layout_margin="10px"/>
+
+
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Read More: https://www.thinkabitlab.com/project/lab-hardware-highlight-3d-printing"
+                android:layout_margin="10px"/>
+
+        </LinearLayout>
 
 
 
     </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--local feed-->
+
+
+
+        <LinearLayout
+            android:id="@+id/localView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFCCCC"
+            android:padding="20px"
+            android:layout_margin="30px">
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:textSize="13pt"
+                android:text="Local Feed"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/gray"
+                android:layout_marginTop="20dp"
+                android:text="Activity: You have earned a Fast Learning Badge! - 7/18/2015"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Amy unlocked Computer Science: Software Developer Career! - 7/18/2015"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Activity: You have reached Level 10!- 7/16/2015"/>
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Sam followed KHK Professionals!- 7/10/2015"/>
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="ThinkABit lab posted a new project!- 7/1/2015"/>
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
 
 </ScrollView>

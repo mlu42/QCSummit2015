@@ -3,8 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
 
 
-
-
     <item android:id="@+id/action_notification"
         android:icon="@drawable/notification"
         android:title="News"
@@ -12,6 +10,7 @@
 
     <item android:id="@+id/action_profile"
         android:title="Profile"
+        android:icon="@drawable/ic_action_action_account_box"
         app:showAsAction="ifRoom"/>
 
     <item android:id="@+id/action_Career"
@@ -21,9 +20,8 @@
     <item android:id="@+id/action_Social"
         android:title="Social"
         app:showAsAction="ifRoom"/>
-
-
-
-
+    <item android:id="@+id/action_logout"
+        android:title="Log out"
+        app:showAsAction="ifRoom"/>
 
 </menu>

@@ -48,25 +48,43 @@ android:background="@color/lightAqua"
                     android:text="Career Package number: 6"
                     android:layout_margin="10px"/>
 
-
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:text="Projects number: 6"
                     android:layout_margin="10px"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Following: 19"
-                android:layout_margin="10px"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="Qualcomm index: 167"
-                android:layout_margin="10px"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Following: 19"
+                    android:layout_margin="10px"/>
 
 
-                <Button
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="20px"
+                    android:background="@drawable/riazon"/>
+
+
+
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Personality index: 167"
+                    android:layout_margin="10px"/>
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recommendation Career: Engineer, Product Manager, Data Analyist"
+                    android:layout_margin="10px"/>
+
+
+
+            <Button
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
                     android:text="Social Room"
@@ -77,51 +95,7 @@ android:background="@color/lightAqua"
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_margin="30px">
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/gray"
-                android:textSize="13pt"
-                android:text="Activities"/>
 
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@color/gray"
-                android:layout_marginTop="5dp"
-                android:text="Activity: You have earned a Fast Learning Badge! - 7/18/2015"/>
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="You unlocked Computer Science: Software Developer Career!- 7/18/2015"/>
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="Activity: You have reached Level 10!- 7/16/2015"/>
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="You followed KHK Professionals!- 7/10/2015"/>
-
-            <TextView
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:text="ThinkABit lab posted a new project!- 7/1/2015"/>
-
-
-
-        </LinearLayout>
 
 
     </LinearLayout>
