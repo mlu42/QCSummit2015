@@ -1,4 +1,4 @@
-package com.qcsummit.thinkabit.thankabit;
+package com.qcsummit.thinkabit.qcsummit;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

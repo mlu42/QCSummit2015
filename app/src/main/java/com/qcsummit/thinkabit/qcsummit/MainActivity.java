@@ -1,17 +1,32 @@
-package com.qcsummit.thinkabit.thankabit;
+package com.qcsummit.thinkabit.qcsummit;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
+
+    private Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        button = (Button) findViewById(R.id.btnlogin);
+
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                setContentView(R.layout.first_page);
+                Intent intent = new Intent(MainActivity.this, Firstpage.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
